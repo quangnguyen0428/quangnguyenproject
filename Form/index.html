@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Đăng ký thành viên</h1>
+    <form class="form">
+        <table class="table">
+            <tr>
+                <th>Nội dung</th>
+                <th>Giá trị</th>
+            </tr>
+            <tr>
+                <td>
+                    <label>Họ tên:</label>
+                </td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Mật khẩu:</label>
+                </td>
+                <td>
+                <input type="password" name="password" required>
+                <!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Avatar:</label>
+                </td>
+                <td><input type="file" name="avatar" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Số điện thoại:</label>
+                </td>
+                <td><input type="text" name="numberphone" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tuổi:</label>
+                </td>
+                <td>
+                    <div class="age">
+                        <input type="number" name="age" min="1" max="100">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Giới tính:</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender"> <label>Nam</label>
+                    <br>
+                    <input type="radio" name="gender" checked> <label>Nữ</label>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Sở thích:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="interests" checked > <label>Đá bóng</label> <br>
+                    <input type="checkbox" name="interests" > <label>Cầu lông</label> <br>
+                    <input type="checkbox" name="interests" > <label>Đua thuyền</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú</td>
+                <td>
+                    <textarea name="note" cols="20" rows="3"></textarea>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Đăng ký</button>
+    </form>
+</body>
+</html>

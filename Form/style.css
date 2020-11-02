@@ -1,0 +1,55 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.form {
+    width: 35%;
+    margin: auto;
+
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table, td, th {
+    border: 1px solid black;
+}
+.table th, .table tr > td {
+    padding: 0.7rem;
+}
+
+.table th {
+    font-size: 1.5rem;
+}
+.table td {
+    font-size: 1rem;
+}
+
+.form button[type="submit"] {
+    margin: 0.5rem 0;
+    border-radius: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+
+}
+.form .age {
+    position: relative;
+}
+.form .age input {
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.form .age::after {
+    content: 'tuổi';
+    display: block;
+    position: absolute;
+    left: 2rem;
+    top: 0.15rem;
+    font-size: 0.9rem;
+}
